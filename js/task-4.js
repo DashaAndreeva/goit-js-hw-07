@@ -2,9 +2,9 @@
 
 const formElem = document.querySelector(".login-form");
 
-formElem.addEventListener("submit", onFormSumbit);
+formElem.addEventListener("submit", onFormSubmit);
 
-function onFormSumbit(e) {
+function onFormSubmit(e) {
   e.preventDefault();
 
   const userEmail = formElem.elements.email.value.trim();

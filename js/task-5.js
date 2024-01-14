@@ -10,10 +10,10 @@ const bodyElem = document.querySelector("body");
 const colorTextElem = bodyElem.querySelector(".color");
 const buttonElem = bodyElem.querySelector(".change-color");
 
-buttonElem.addEventListener("click", onButtonClick);
-
 function onButtonClick() {
   const randomColor = getRandomHexColor();
   bodyElem.style.backgroundColor = randomColor;
   colorTextElem.textContent = randomColor;
 }
+
+buttonElem.addEventListener("click", onButtonClick);

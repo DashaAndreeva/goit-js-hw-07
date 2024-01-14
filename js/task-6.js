@@ -29,7 +29,7 @@ function destroyBoxes() {
 }
 
 function onCreateButtonClick() {
-  const amount = inputElem.value;
+  const amount = +inputElem.value;
   if (amount <= 100) {
     createBoxes(amount);
     inputElem.value = "";

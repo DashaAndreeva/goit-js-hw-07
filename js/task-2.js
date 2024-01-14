@@ -28,13 +28,12 @@ const images = [
 ];
 
 const containerElem = document.querySelector(".gallery");
-
 function createImg() {
   const create = images
     .map((img) => {
       return `
     <li>
-    <img src="${img.url}" alt="${img.alt}" width = '360'; height = '300'>
+    <img src="${img.url}" alt="${img.alt}" width="360" height="300">
     </li>
     `;
     })
@@ -43,6 +42,6 @@ function createImg() {
   return create;
 }
 
-const murkup = createImg();
+const markup = createImg();
 
-containerElem.insertAdjacentHTML("afterbegin", murkup);
+containerElem.insertAdjacentHTML("afterbegin", markup);
